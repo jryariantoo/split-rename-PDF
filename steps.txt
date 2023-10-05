@@ -1,0 +1,16 @@
+*** INSTALL PYTHON ***
+1. install python https://www.python.org/ftp/python/3.10.11/python-3.10.11-amd64.exe
+2. follow installation step in https://www.tomshardware.com/how-to/install-python-on-windows-10-and-11
+3. check python --version
+
+*** IF YOU CAN'T ACCES VENV ***
+1. myenv\Scripts\activate
+"Set-ExecutionPolicy Unrestricted -Force"
+2. try step 1 again
+
+*** OR CREATE VENV ***
+1. create venv python -m venv myenv
+2. pip install -r requirements.txt
+
+*** MAKE .EXE FILE ***
+1. pyinstaller --onefile --name="splitpdf" split.py
